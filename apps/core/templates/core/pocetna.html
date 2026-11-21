@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="kartica">
+  <h1>Dobro došli</h1>
+  <p class="tekst-sekundarni">Aplikacija je u izradi. Ovo je probna strana za proveru izgleda.</p>
+  <p>Današnji datum: <strong>{{ danas|date:"SHORT_DATE_FORMAT" }}</strong></p>
+</section>
+
+<section class="kartica">
+  <h2>Stanja</h2>
+  <ul class="lista-oznaka">
+    <li><span class="oznaka oznaka-uspeh">✓ Aktivna članarina</span></li>
+    <li><span class="oznaka oznaka-upozorenje">! Članarina uskoro ističe</span></li>
+    <li><span class="oznaka oznaka-greska">✕ Istekla članarina</span></li>
+    <li><span class="oznaka oznaka-info">i Podsetnik: nedeljni izveštaj</span></li>
+  </ul>
+</section>
+
+<section class="kartica">
+  <h2>Forma</h2>
+  <form onsubmit="return false">
+    <label class="polje">
+      <span class="polje-labela">Težina (kg)</span>
+      <input type="text" inputmode="decimal" placeholder="npr. 78,5">
+    </label>
+    <button type="submit" class="dugme">Sačuvaj</button>
+  </form>
+</section>
+{% endblock %}

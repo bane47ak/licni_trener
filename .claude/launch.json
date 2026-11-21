@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "licni-trener",
+      "runtimeExecutable": "C:\\Users\\Bane\\AppData\\Local\\Microsoft\\WinGet\\Links\\uv.exe",
+      "runtimeArgs": ["run", "python", "manage.py", "runserver", "8000"],
+      "port": 8000
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Tajne i lokalni podaci – nikad na GitHub
+.env
+lokalni_emailovi/
+privatni_fajlovi/
+staticfiles/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Alati i sistem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.claude/settings.local.json

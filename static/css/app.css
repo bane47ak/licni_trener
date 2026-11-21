@@ -1,0 +1,104 @@
+/* Osnovni stil – mobile-first: prvo telefon, pa veći ekrani. */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { font-size: var(--velicina-teksta); }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  line-height: 1.5;
+  color: var(--boja-tekst);
+  background: var(--boja-pozadina);
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.2rem; }
+p { margin: 0 0 0.75em; }
+
+a { color: var(--boja-akcent); }
+
+:focus-visible {
+  outline: 3px solid var(--boja-akcent);
+  outline-offset: 2px;
+}
+
+/* --- Raspored --- */
+.zaglavlje {
+  background: var(--boja-kartica);
+  border-bottom: 1px solid var(--boja-ivica);
+  padding: 12px var(--razmak);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--boja-akcent);
+  text-decoration: none;
+}
+.sadrzaj {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--razmak);
+}
+
+.kartica {
+  background: var(--boja-kartica);
+  border: 1px solid var(--boja-ivica);
+  border-radius: var(--radijus);
+  padding: var(--razmak);
+  margin-bottom: var(--razmak);
+}
+
+.tekst-sekundarni { color: var(--boja-tekst-2); }
+
+/* --- Forme (jedna kolona) --- */
+.polje { display: block; margin-bottom: var(--razmak); }
+.polje-labela { display: block; font-weight: 600; margin-bottom: 4px; }
+
+input, select, textarea {
+  width: 100%;
+  min-height: var(--visina-kontrole);
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--boja-tekst);
+  background: var(--boja-kartica);
+  border: 1px solid var(--boja-ivica);
+  border-radius: var(--radijus);
+}
+input::placeholder, textarea::placeholder { color: var(--boja-tekst-3); }
+
+.dugme {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: var(--visina-kontrole);
+  padding: 10px 20px;
+  font: inherit;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: var(--boja-akcent);
+  border: 0;
+  border-radius: var(--radijus);
+  cursor: pointer;
+}
+.dugme:hover, .dugme:active { background: var(--boja-akcent-hover); }
+
+/* --- Oznake stanja (uvek boja + tekst/ikona) --- */
+.lista-oznaka { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.oznaka {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.oznaka-uspeh { color: var(--boja-uspeh); background: var(--boja-uspeh-poz); }
+.oznaka-upozorenje { color: var(--boja-upozorenje); background: var(--boja-upozorenje-poz); }
+.oznaka-greska { color: var(--boja-greska); background: var(--boja-greska-poz); }
+.oznaka-info { color: var(--boja-info); background: var(--boja-info-poz); }
+
+/* --- Veći ekrani --- */
+@media (min-width: 768px) {
+  .dugme { width: auto; }
+}

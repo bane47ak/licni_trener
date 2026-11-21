@@ -1,0 +1,30 @@
+/* Boje i osnovne vrednosti dizajna (docs/07_dizajn.md). Menjaju se samo ovde. */
+:root {
+  --boja-pozadina: #F8FAFC;
+  --boja-kartica: #FFFFFF;
+  --boja-povrsina-2: #F1F5F9;
+  --boja-ivica: #E2E8F0;
+
+  --boja-tekst: #0F172A;
+  --boja-tekst-2: #475569;
+  --boja-tekst-3: #94A3B8; /* samo placeholder i nebitne labele */
+
+  --boja-akcent: #0F766E;
+  --boja-akcent-hover: #115E59;
+  --boja-akcent-blaga: #F0FDFA;
+
+  --boja-uspeh: #15803D;
+  --boja-uspeh-poz: #DCFCE7;
+  --boja-upozorenje: #B45309;
+  --boja-upozorenje-poz: #FEF3C7;
+  --boja-greska: #B91C1C;
+  --boja-greska-poz: #FEE2E2;
+  --boja-info: #1D4ED8;
+  --boja-info-poz: #DBEAFE;
+
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --velicina-teksta: 16px;
+  --radijus: 10px;
+  --razmak: 16px;
+  --visina-kontrole: 48px; /* najmanje 44 px, dovoljno za prst */
+}

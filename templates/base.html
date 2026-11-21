@@ -1,0 +1,18 @@
+{% load static %}<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ APP_NAME }}{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/tokens.css' %}">
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+  <header class="zaglavlje">
+    <a class="logo" href="{% url 'pocetna' %}">{{ APP_NAME }}</a>
+  </header>
+  <main class="sadrzaj">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
