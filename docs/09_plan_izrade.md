@@ -156,7 +156,7 @@ Posle **svakog koraka**: automatski testovi, uputstvo vlasniku kako da isproba, 
 ### Etapa 1 – Jezgro (paket Vođeno)
 | Korak | Sadržaj | Strane |
 |---|---|---|
-| 1.1 | Korisnici, uloge, rasporedi (klijent: donja navigacija; trener: bočni/skriveni meni), strane grešaka, osnova audit loga, lokalni emailovi u folderu. | – |
+| 1.1 | Sopstveni model korisnika (prijava emailom) – lokalna baza se zbog toga pravi iznova (još je prazna). Korisnici, uloge, rasporedi (klijent: donja navigacija; trener: bočni/skriveni meni), strane grešaka, osnova audit loga, lokalni emailovi u folderu. | – |
 | 1.2 | Registracija sa saglasnostima, privremeni pravni tekstovi („NACRT”), potvrda emaila, prijava, zaboravljena i nova lozinka, ograničenje pokušaja. | K1, K2, K3, K4, K5, K8 |
 | 1.3 | Prijava trenera sa obaveznom 2FA, recovery kodovi, promena lozinke. | A1, A2 |
 | 1.4 | Jedan aktivan uređaj po klijentu + obaveštenja o prekinutoj sesiji. | (K1) |
